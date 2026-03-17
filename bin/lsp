@@ -1,0 +1,2 @@
+#!/bin/bash
+ls $(echo $PATH | sed 's/:/ /g') --color=auto | grep "$1" --color=auto
