@@ -1,0 +1,4 @@
+#!/bin/bash
+curl https://api.proxynova.com/comb?query="$1"&start=0&limit=30 | jq
+
+

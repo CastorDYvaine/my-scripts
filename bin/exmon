@@ -1,0 +1,5 @@
+#!/bin/bash
+ip link set wlan0"$1" down && iw wlan0"$1" set type managed && ip link set wlan0"$1" up
+systemctl restart iwd
+systemctl restart NetworkManager
+

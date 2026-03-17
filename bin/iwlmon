@@ -1,0 +1,7 @@
+#!/bin/bash
+systemctl stop iwd
+systemctl stop avahi-daemon.socket
+systemctl stop avahi-daemon
+systemctl stop wpa_supplicant
+systemctl stop NetworkManager
+airmon-ng start wlan0
